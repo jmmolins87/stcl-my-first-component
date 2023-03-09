@@ -13,18 +13,11 @@ export class MyComponent {
 
   @State() disabled: boolean = false;
 
-  @Listen('click') handleClick() {
-    this.disabled = true;
-    setTimeout(() => {
-      this.disabled = false
-    }, 3000)
-  }
+  // @Listen('click') Hand
 
   render() {
     return (
-      <button class={ this.primary ? 'primary' : '' } disabled={ this.disabled }>
-        { this.value }
-      </button>
+      <button></button>
     )
   }
 }

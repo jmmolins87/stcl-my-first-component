@@ -1,4 +1,4 @@
-import { Component, Prop, h, State, Listen } from '@stencil/core';
+import { Component, Prop, h, State } from '@stencil/core';
 
 
 @Component({
@@ -13,12 +13,7 @@ export class MyComponent {
 
   @State() disabled: boolean = false;
 
-  @Listen('click') handleClick() {
-    this.disabled = true;
-    setTimeout(() => {
-      this.disabled = false
-    }, 3000)
-  }
+  // @Listen('click') Hand
 
   render() {
     return (
